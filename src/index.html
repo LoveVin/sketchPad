@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="./imgs/logo.ico" type="image/x-icon"/> 
+    <title>canvas画板</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1678983_gfwh5d7kb4.css">
+  </head>
+  <body>
+    <canvas id="canvas" width="100" height="100"></canvas>
+    <div class="toolBar">
+      <div class="paintTools">
+        <div class="toolSelector">
+          <div class="iconfont icon-pen selected"></div>
+          <div class="iconfont icon-erase"></div>
+          <!--<div style="width: 8px; height: 8px; border: 1px solid red;"></div>-->
+        </div>
+        <div class="paintWidth">
+          <div class="widthSelector">
+            <div class="iconfont icon-cuxi"></div>
+            <div class="description">
+              <p>粗细</p>
+              <p>&nbsp ▼</p>
+            </div>
+          </div>
+          <div class="lineSelector hidden">
+            <div data-line="2" class="selected"></div>
+            <div data-line="4"></div>
+            <div data-line="6"></div>
+            <div data-line="8"></div>
+          </div>
+        </div>
+        <div class="palette">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="colorEdit">
+          <input type="color" name="" id="colorSelector">
+          <div class="description">
+            <p>编辑</p>
+            <p>颜色</p>
+          </div>
+        </div>
+        <div class="finishOrclear">
+          <div class="iconfont icon-clear"></div>
+          <div class="iconfont icon-download"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
