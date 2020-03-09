@@ -76,7 +76,7 @@ else
         }
         };
         canvas.onmouseup = () =>{
-        IsPoint = false;
+            IsPoint = false;
         }
     }
     else
@@ -92,7 +92,9 @@ colorSelector.onchange = (e)=>{
     element.style.backgroundColor = e.target.value
     element.dataset.color = e.target.value
     currentIndex = (currentIndex % 15) + 1
-    currentColor = e.target.value
+    if(isPaint){
+        currentColor = e.target.value
+    }
     colorHashMap.push(e.target.value)
 }
 document.querySelectorAll('.paintTools .palette > div').forEach((element,index)=>{
